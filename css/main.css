@@ -1,0 +1,97 @@
+/* line 17, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+html, body {
+  background-color: #000;
+  max-width: 100%;
+  overflow-x: hidden; }
+
+/* line 22, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.section {
+  position: relative;
+  height: 105vh;
+  min-height: 750px; }
+  /* line 27, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+/* line 34, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.header {
+  position: absolute;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 39, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.links {
+  position: absolute;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  /* line 43, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .links img {
+    margin-bottom: 15px; }
+
+/* line 48, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.enterwild {
+  position: absolute;
+  width: 40%;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  /* line 54, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .enterwild:before, .enterwild:after {
+    content: url(../img/BANGBANGBANG.jpeg);
+    position: absolute;
+    top: 0;
+    right: calc(50% + 200px); }
+  /* line 61, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .enterwild:after {
+    left: calc(50% + 200px);
+    right: auto; }
+
+/* line 67, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.social-media {
+  position: absolute;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  /* line 71, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .social-media img {
+    margin-bottom: 15px; }
+
+/* line 76, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.decorative-stuff {
+  position: absolute;
+  top: 90%;
+  width: 100%; }
+  /* line 81, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .decorative-stuff #tellem {
+    float: left;
+    padding-left: 20px; }
+  /* line 86, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .decorative-stuff #howl {
+    float: right;
+    padding-right: 20px; }
+    /* line 90, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+    .decorative-stuff #howl:hover {
+      cursor: pointer; }
+
+/* line 101, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.contact .email {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+/* line 105, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+.contact .email-inst {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=main.css.map */

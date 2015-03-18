@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <div class="section">
+            <div class="header"><img src="img/FRANK.jpeg"></div>
+            <div class="links">
+                <a href="https://soundcloud.com/leonemusic"><img src="img/TUNES.jpeg"></a>
+                <a href="https://www.youtube.com/user/franklynraps/videos"><img src="img/FILMS.jpeg"></a>
+                <a href="#"><img src="img/UGH.jpeg"></a>
+                <a href="#"><img src="img/CLOTHES.jpeg"></a>
+            </div>
+            <div class="enterwild">
+                <img src="img/EW.jpeg">
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="social-media">
+                <a href="https://twitter.com/franklynraps"><img src="img/BIRD.jpeg"></a><br>
+                <a href="https://instagram.com/franklynraps/"><img src="img/GRAM.jpeg"></a><br>
+                <a href=""><img src="img/BLOG.jpeg"></a><br>
+                <a href="mailto:leonemusical@gmail.com"><img src="img/MAIL.jpeg"></a>
+            </div>
+            <div class="decorative-stuff">
+                <div class="wrapper">
+                    <img id="tellem" src="img/TELLEM.jpeg">
+                    <img id="howl" src="img/HOWL.jpeg" onclick="play()">
+                    <audio id="howl-audio" src="Velociraptor%20Full.wav"></audio>
+                </div>
+            </div>
+        </div>
+        
+        <div id="gallery" class="section" usemap="#mediafire">
+            <img src="img/EnterWILD%20Gallery.jpg" usemap="#mediafire">
+            <map name="mediafire">
+                <area href="#" shape="rect" coords="748,384,979,615" style="outline:none;" target="_self" />
+                <area shape="rect" coords="1726,997,1728,999" style="outline:none;" href="#" />
+            </map>
+
+        </div>
+        
+        <div class="section contact">
+            <a href="mailto:leonemusical@gmail.com"><div class="email"><img src="img/URL_MAIL.jpg"></div></a>
+            <div class="email-inst"><img src="img/MAIL_ACC%20.jpg"></div>
+        </div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/sc-script.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <script>
+            function play(){
+                var audio = document.getElementById('howl-audio');
+                if (audio.paused) {
+                    audio.play();
+                }
+                else{
+                    audio.pause();
+                    audio.currentTime = 0
+                }
+            }
+        </script>
+    </body>
+</html>
