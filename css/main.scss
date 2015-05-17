@@ -13,13 +13,45 @@ $padding: 20px;
     overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'Oneer';
+  src: url('fonts/Oneer.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Oneer.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Oneer.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Oneer.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Oneer.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Oneer.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 html, 
 body {
     background-color: #000;
     @include disable-horizontal-scrolling();
+    
+    font-family: Oneer;
 }
 
-.section {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: Oneer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
     position: relative;
     height: 105vh;
     min-height: 750px;
@@ -31,78 +63,111 @@ body {
     }
 }
 
-.header {
-    position: absolute;
-    @include center-this(20%);
-}
-
-.links {
-    position: absolute;
-    @include center-this(55%);
-    
-    img {
-        margin-bottom: $space;    
-    }
-}
-
-.enterwild {
-    position: absolute;
-    width: 40%;
-    @include center-this(85%);
-    
-    &:before,
-    &:after {
-        content: url(../img/BANGBANGBANG.jpeg);
+.one {
+    .header {
         position: absolute;
-        top: 0;
-        right: calc(50% + 200px);
-    }
-    
-    &:after {
-        left: calc(50% + 200px);
-        right: auto;
-    }
-}
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        height: 450px;
 
-.social-media {
-    position: absolute;
-    @include center-this(45%);
-    
-    img {
-        margin-bottom: $space;
-    }
-}
+        text-align: center;
+        font-size: 11em;
+        color: #fff;
 
-.decorative-stuff {
-    position: absolute;
-    top: 90%;
-    width: 100%;
-    
-    #tellem {
-        float: left;
-        padding-left: $padding;
+        h1 {
+            margin: 0;    
+        }
     }
-    
-    #howl {
-        float: right;
-        padding-right: $padding;
+
+    .links {
+        position: absolute;
+        @include center-this(55%);
+        ul {
+            text-align: center;
+        }
         
-        &:hover {
-            cursor: pointer;
+        a {
+            font-size: 5em;
+        }
+    }
+
+    .enterwild {
+        position: absolute;
+        width: 40%;
+        @include center-this(85%);
+
+        &:before,
+        &:after {
+            content: '! ! !';
+            
+            position: absolute;
+            top: 0;
+            right: calc(50% + 200px);
+            
+            color: #fff;
+            font-size: 160px;
+            
+            width: 180px;
+            height: 160px;
+        }
+
+        &:after {
+            left: calc(50% + 200px);
+            right: auto;
         }
     }
 }
 
-#gallery {
-    
-}
+.two {
+    .social-media {
+        position: absolute;
+        @include center-this(45%);
 
-.contact {
-    .email {
-        @include center-this(50%);
+        color: #fff;
+        text-align: center;
+            
+        a {
+            font-size: 12em;
+            line-height: 118px;
+            height: 120px;
+        }
     }
 
-    .email-inst {
-        @include center-this(75%);
+    .decorative-stuff {
+        position: absolute;
+        top: 90%;
+        width: 100%;
+
+        #tellem {
+            float: left;
+            padding-left: $padding;
+        }
+
+        #howl {
+            float: right;
+            padding-right: $padding;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.four {
+    color: #fff;
+    text-align: center;
+    
+    div {
+        @include center-this(55%);
+        
+        h3 {
+            font-size: 7em;    
+        }
+        
+        h3:nth-child(2) {
+            margin-top: 20%;    
+        }
     }
 }
