@@ -1,12 +1,21 @@
 $(window).resize(function(){
-   console.log('resize called');
-   var width = $(window).width();
-   if(width <= 768){
-       $('#tellem').removeClass('vis').addClass('invis');
-   }
-   else{
-       $('#tellem').removeClass('invis').addClass('vis');
-   }
+    console.log('resize called');
+    var width = $(window).width();
+    if(width <= 768){
+        $('#tellem').removeClass('vis').addClass('invis');
+    }
+    else{
+        $('#tellem').removeClass('invis').addClass('vis');
+    }
+
+    if(width <= 580){
+        // split email
+        $("section.four a h3").html("LEONEMUSICAL @GMAIL.COM");
+    }
+    else{
+        // make email one line
+        $("section.four a h3").html("LEONEMUSICAL@GMAIL.COM");
+    }
 })
 .resize();
 

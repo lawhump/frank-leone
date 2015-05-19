@@ -77,11 +77,12 @@ section {
     .header {
         display: none;
         
-        position: absolute;
+        position: relative;
         top: 30px;
         left: 0px;
         width: 100%;
-        height: 430px;
+        height: auto;
+//        height: 430px;
 
         text-align: center;
         font-size: 9.2em;
@@ -95,8 +96,9 @@ section {
     .links {
         display: none;
         
-        position: absolute;
-        @include center-this(55%);
+        position: relative;
+        top: 5.5%;
+        
         ul {
             text-align: center;
         }
@@ -233,6 +235,10 @@ section {
             font-size: 7.8em;
             line-height: 180px;
         }
+        
+        .links {
+            top: 2.5%
+        }
     }
     
     .four {
@@ -251,6 +257,10 @@ section {
             top: 12px;
             font-size: 6.7em;
             line-height: 180px;
+        }
+        
+        .links {
+            top: 2.5%    
         }
     
         .enterwild {
@@ -285,6 +295,10 @@ section {
             top: 12px;
             font-size: 5.5em;
         }
+        
+        .links {
+            top: 2.5%    
+        }
     }
     
     .two {
@@ -298,10 +312,20 @@ section {
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+    .one {
+        .header {
+            font-size: 3em;       
+        }
+        
+        .links {
+            top: 2.5%    
+        }
+    }
+    
     .four {
         div {
             h3 {
-                font-size: 2.8em;    
+                font-size: 1.8em;    
             }    
         }
     }
