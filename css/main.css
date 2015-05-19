@@ -55,32 +55,26 @@ section {
   text-align: center;
   font-size: 9.2em;
   color: #fff; }
-  /* line 91, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 90, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .header h1 {
     margin: 0; }
-/* line 96, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+/* line 95, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
 .one .links {
   display: none;
   position: relative;
-  top: 5.5%; }
-  /* line 102, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
-  .one .links ul {
-    text-align: center; }
-  /* line 106, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  top: 5.5%;
+  left: 0%;
+  text-align: center; }
+  /* line 104, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .links a {
     font-size: 5em; }
-/* line 111, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+/* line 109, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
 .one .enterwild {
   display: none;
-  position: absolute;
   width: 100%;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-  /* line 119, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  position: relative;
+  top: 10%; }
+  /* line 118, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .enterwild:before, .one .enterwild:after {
     content: '! ! !';
     position: absolute;
@@ -90,12 +84,12 @@ section {
     font-size: 160px;
     width: 180px;
     height: 160px; }
-  /* line 133, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 132, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .enterwild:after {
     left: calc(50% + 200px);
     right: auto; }
 
-/* line 141, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+/* line 140, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
 .two .social-media {
   position: absolute;
   position: absolute;
@@ -106,39 +100,39 @@ section {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center; }
-  /* line 148, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 147, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .two .social-media a {
     font-size: 12em;
     line-height: 118px;
     height: 120px; }
-/* line 155, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+/* line 154, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
 .two .decorative-stuff {
   position: absolute;
   top: 90%;
   width: 100%; }
-  /* line 160, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 159, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .two .decorative-stuff #tellem {
     float: left;
     padding-left: 20px; }
-  /* line 165, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 164, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .two .decorative-stuff #howl {
     float: right;
     padding-right: 20px; }
-    /* line 169, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+    /* line 168, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
     .two .decorative-stuff #howl:hover {
       cursor: pointer; }
 
-/* line 177, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+/* line 176, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
 .three img {
   width: 100vw;
   height: 105vh;
   min-height: 750px; }
 
-/* line 184, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+/* line 183, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
 .four {
   color: #fff;
   text-align: center; }
-  /* line 188, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 187, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .four div {
     position: absolute;
     top: 55%;
@@ -146,14 +140,14 @@ section {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    /* line 191, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+    /* line 190, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
     .four div h3 {
       font-size: 7em; }
-    /* line 195, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+    /* line 194, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
     .four div h3:nth-child(2) {
       margin-top: 20%; }
 
-/* line 202, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+/* line 201, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
 .dope {
   width: 100vw;
   height: 100vh;
@@ -163,7 +157,7 @@ section {
   -o-background-size: cover;
   background-size: cover;
   color: #fff; }
-  /* line 214, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 213, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .dope .coming-soon {
     text-align: center;
     position: absolute;
@@ -176,75 +170,97 @@ section {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /* line 224, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 223, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .header {
     font-size: 7.9em; }
  }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 233, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 232, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .header {
     top: 12px;
     font-size: 7.8em;
     line-height: 180px; }
-  /* line 239, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 238, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .links {
     top: 2.5%; }
+  /* line 242, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .one .enterwild {
+    top: 5%; }
 
-  /* line 246, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 249, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .four div h3 {
     font-size: 5.8em; }
  }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 256, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 259, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .header {
     top: 12px;
     font-size: 6.7em;
     line-height: 180px; }
-  /* line 262, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 265, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .links {
     top: 2.5%; }
-  /* line 268, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
-  .one .enterwild:before, .one .enterwild:after {
-    content: none; }
+  /* line 269, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .one .enterwild {
+    top: 5%; }
+    /* line 273, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+    .one .enterwild:before, .one .enterwild:after {
+      content: none; }
 
-  /* line 276, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 283, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .two .social-media a {
+    font-size: 8em; }
+  /* line 288, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .two .decorative-stuff #tellem {
     width: 65%; }
 
-  /* line 284, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 296, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .four div h3 {
     font-size: 4.2em; }
  }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* line 294, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 306, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .header {
     top: 12px;
     font-size: 5.5em; }
-  /* line 299, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 311, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .links {
     top: 2.5%; }
+  /* line 315, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .one .enterwild {
+    top: 5%; }
 
-  /* line 306, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 322, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .two .social-media a {
+    font-size: 8em; }
+  /* line 328, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .two .decorative-stuff #tellem {
     width: 55%; }
  }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /* line 316, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 338, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .header {
     font-size: 3em; }
-  /* line 320, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 342, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .one .links {
     top: 2.5%; }
+  /* line 346, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .one .enterwild {
+    top: 5%; }
 
-  /* line 327, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  /* line 353, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
+  .two .social-media a {
+    font-size: 8em; }
+
+  /* line 361, /Users/lawrencehumphrey/Dev/frank-leone/css/main.scss */
   .four div h3 {
     font-size: 1.8em; }
  }
