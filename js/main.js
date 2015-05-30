@@ -5,12 +5,12 @@ $(window).resize(function(){
     if(width <= 768){
         $('#tellem').removeClass('vis').addClass('invis');
         $('.gallery-wrapper').removeClass('vis').addClass('invis');
-        $('iframe').removeClass('invis').addClass('vis');
+        $('.sc-wrapper').removeClass('invis').addClass('vis');
     }
     else{
         $('#tellem').removeClass('invis').addClass('vis');
         $('.gallery wrapper').removeClass('invis').addClass('vis');
-        $('iframe').removeClass('vis').addClass('invis');
+        $('.sc-wrapper').removeClass('vis').addClass('invis');
     }
 
     if(width <= 580){
