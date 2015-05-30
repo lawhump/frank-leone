@@ -19,14 +19,13 @@ $padding: 20px;
   font-family: 'Oneer';
   src: url('fonts/Oneer.eot'); /* IE9 Compat Modes */
   src: url('fonts/Oneer.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Oneer.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/Oneer.woff') format('woff'), /* Pretty Modern Browsers */
        url('fonts/Oneer.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('fonts/Oneer.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 html, 
 body {
+    font-size: 80%;
     background-color: #000;
     @include disable-horizontal-scrolling();
     
@@ -78,31 +77,40 @@ section {
         display: none;
         
         position: relative;
-        top: 30px;
+        top: 10%;
         left: 0px;
         width: 100%;
         height: auto;
 
         text-align: center;
-        font-size: 9.2em;
+        font-size: 10rem;
         color: #fff;
 
         h1 {
-            margin: 0;    
+            margin: 0;  
+            line-height: 160px;
+        }
+        
+        .line-break {
+            display: none;
         }
     }
 
     .links {
+        ul {
+            padding: 0;    
+        }
+        
         display: none;
         
         position: relative;
-        top: 5.5%;
+        top: 15%;
         left: 0%;
         
         text-align: center;
         
         a {
-            font-size: 5em;
+            font-size: 6rem;
         }
     }
 
@@ -110,9 +118,8 @@ section {
         display: none;
         
         width: 100%;
-//        @include center-this(85%);
         position: relative;
-        top: 10%;
+        top: 20%;
 
         &:before,
         &:after {
@@ -145,7 +152,7 @@ section {
         text-align: center;
             
         a {
-            font-size: 12em;
+            font-size: 12rem;
             line-height: 118px;
             height: 120px;
         }
@@ -178,6 +185,15 @@ section {
         height: 105vh;
         min-height: 750px;
     }
+    
+    div.sc-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 
 .four {
@@ -188,7 +204,7 @@ section {
         @include center-this(55%);
         
         h3 {
-            font-size: 7em;    
+            font-size: 7rem;    
         }
         
         h3:nth-child(2) {
@@ -213,7 +229,7 @@ section {
     .coming-soon {
         text-align: center;
         @include center-this(50%);
-        font-size: 5em;
+        font-size: 5rem;
     }
 }
 
@@ -221,7 +237,7 @@ section {
 @media only screen and (max-width : 1200px) {
     .one {
         .header {
-            font-size: 7.9em;       
+            font-size: 7.9rem;       
         }
     }
 }
@@ -230,24 +246,14 @@ section {
 @media only screen and (max-width : 992px) {
     .one {
         .header {
-            top: 12px;
-            font-size: 7.8em;
-            line-height: 180px;
-        }
-        
-        .links {
-            top: 2.5%
-        }
-        
-        .enterwild {
-            top: 5%;    
+            font-size: 7.4rem;
         }
     }
     
     .four {
         div {
             h3 {
-                font-size: 5.8em;    
+                font-size: 5.8rem;    
             }    
         }
     }
@@ -257,17 +263,20 @@ section {
 @media only screen and (max-width : 768px) {
     .one {
         .header {
-            top: 12px;
-            font-size: 6.7em;
-            line-height: 180px;
-        }
-        
-        .links {
-            top: 2.5%    
+            font-size: 6.7rem;
+            top: 5%;
+            
+            .line-break {
+                display: block;    
+            }
         }
     
+        .links {
+            top: 6%;    
+        }
+        
         .enterwild {
-            top: 5%;
+            top: 10%;
             
             &:before,
             &:after {
@@ -281,7 +290,7 @@ section {
     .two {
         .social-media {
             a {
-                font-size: 8em;    
+                font-size: 8rem;    
             }
         }
         .decorative-stuff {
@@ -291,10 +300,15 @@ section {
         }
     }
     
+    .three {
+        height: auto;
+        min-height: 350px;
+    }
+    
     .four {
         div {
             h3 {
-                font-size: 4.2em;    
+                font-size: 4.2rem;    
             }    
         }
     }
@@ -305,7 +319,7 @@ section {
     .one {
         .header {
             top: 12px;
-            font-size: 5.5em;
+            font-size: 5.5rem;
         }
         
         .links {
@@ -320,7 +334,7 @@ section {
     .two {
         .social-media {
             a {
-                font-size: 8em;    
+                font-size: 8rem;    
             }
         }
         
@@ -336,7 +350,7 @@ section {
 @media only screen and (max-width : 320px) {
     .one {
         .header {
-            font-size: 3em;       
+            font-size: 3rem;       
         }
         
         .links {
@@ -351,7 +365,7 @@ section {
     .two {
         .social-media {
             a {
-                font-size: 8em;    
+                font-size: 8rem;    
             }
         }
     }
@@ -359,7 +373,7 @@ section {
     .four {
         div {
             h3 {
-                font-size: 1.8em;    
+                font-size: 1.8rem;    
             }    
         }
     }
