@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Oneer';
-  src: url("fonts/Oneer.eot");
+  src: url("fonts/Oneer/Oneer.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/Oneer.eot?#iefix") format("embedded-opentype"), url("fonts/Oneer.ttf") format("truetype"), url("fonts/Oneer.svg#svgFontName") format("svg");
+  src: url("fonts/Oneer/Oneer.eot?#iefix") format("embedded-opentype"), url("fonts/Oneer/Oneer.ttf") format("truetype"), url("fonts/Oneer/Oneer.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'Orator-Std';
-  src: url("fonts/Orator-Std.eot");
+  src: url("fonts/Orator-Std/Orator-Std.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/Orator-Std.eot?#iefix") format("embedded-opentype"), url("fonts/Orator-Std.ttf") format("truetype"), url("fonts/Orator-Std.svg#svgFontName") format("svg");
+  src: url("fonts/Orator-Std/Orator-Std.eot?#iefix") format("embedded-opentype"), url("fonts/Orator-Std/Orator-Std.ttf") format("truetype"), url("fonts/Orator-Std/Orator-Std.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 html,
 body {
@@ -98,7 +98,7 @@ section {
     top: -35px;
     width: 180px; }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1268px) {
   .header {
     margin-top: 3vh; } }
 @media only screen and (max-width: 700px) {
@@ -111,7 +111,19 @@ section {
   .enterwild {
     height: auto;
     margin: 0 auto;
+    margin-top: 7vh;
     width: 80%; } }
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 22rem;
+    line-height: 14rem; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1 {
+    font-size: 22rem;
+    line-height: 14rem; }
+
+  .enterwild {
+    margin-top: 1.8vh; } }
 /* END section one logic */
 /** START section two logic **/
 .two {
@@ -212,11 +224,10 @@ section {
     font-size: 38.5%; } }
 @media only screen and (max-width: 320px) {
   html {
-    font-size: 35.5%; }
-
-  h1 {
-    font-size: 22rem;
-    line-height: 14rem; } }
+    font-size: 35.5%; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  html {
+    font-size: 32.5%; } }
 .dope {
   width: 100vw;
   height: 100vh;
@@ -234,7 +245,7 @@ section {
   justify-content: center; }
   .dope .coming-soon {
     font-family: Orator-Std, san-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,18 +12,18 @@
 
 @font-face {
   font-family: 'Oneer';
-  src: url('fonts/Oneer.eot'); /* IE9 Compat Modes */
-  src: url('fonts/Oneer.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Oneer.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/Oneer.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/Oneer/Oneer.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Oneer/Oneer.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Oneer/Oneer.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Oneer/Oneer.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'Orator-Std';
-  src: url('fonts/Orator-Std.eot'); /* IE9 Compat Modes */
-  src: url('fonts/Orator-Std.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Orator-Std.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/Orator-Std.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/Orator-Std/Orator-Std.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Orator-Std/Orator-Std.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Orator-Std/Orator-Std.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Orator-Std/Orator-Std.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 html, 
@@ -121,7 +121,7 @@ section {
     }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1268px) {
     .header { margin-top: 3vh; }
 }
 
@@ -142,8 +142,27 @@ section {
     .enterwild {
         height: auto;
         margin: 0 auto;
+        margin-top: 7vh;
         width: 80%;
     }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 22rem; 
+        line-height: 14rem;
+    }
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+    h1 {
+        font-size: 22rem; 
+        line-height: 14rem;
+    }
+
+    .enterwild { margin-top: 1.8vh; }
 }
 
 /* END section one logic */
@@ -244,6 +263,7 @@ section {
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 480px) {
+
     .three {
         display: none;
     }
@@ -291,11 +311,12 @@ and (max-device-width: 480px) {
 
 @media only screen and (max-width: 320px) {
     html { font-size: 35.5%; }
+}
 
-    h1 {
-        font-size: 22rem; 
-        line-height: 14rem;
-    }
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+    html { font-size: 32.5%; }    
 }
 
 // Clothes.html
@@ -320,7 +341,7 @@ and (max-device-width: 480px) {
     
     .coming-soon {
         font-family: Orator-Std, san-serif;
-        font-size: 5rem;
+        font-size: 3rem;
         text-align: center;
     }
 }
