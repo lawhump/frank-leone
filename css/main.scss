@@ -18,6 +18,14 @@
        url('fonts/Oneer.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Orator-Std';
+  src: url('fonts/Orator-Std.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Orator-Std.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Orator-Std.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Orator-Std.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 html, 
 body {
     background-color: #000;
@@ -42,7 +50,8 @@ a {
 }
 
 h1 {
-    font-size: 27rem; 
+    font-size: 27rem;
+    letter-spacing: 1rem;
     line-height: 18rem;
     margin: 0 auto;
     max-width: 1400px;
@@ -127,17 +136,13 @@ section {
     }
 }
 
-// @media only screen and (max-width: 480px) {
-//     .enterwild {
-//         margin-top: 25vh;
-//     }
-// }
+@media only screen and (max-width: 480px) {
+    .header { margin-top: 1.8vh; }
 
-@media only screen and (max-width: 320px) {
     .enterwild {
         height: auto;
         margin: 0 auto;
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -305,9 +310,17 @@ and (max-device-width: 480px) {
     background-size: cover;
     
     color: #fff;
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
     
     .coming-soon {
-        text-align: center;
+        font-family: Orator-Std, san-serif;
         font-size: 5rem;
+        text-align: center;
     }
 }

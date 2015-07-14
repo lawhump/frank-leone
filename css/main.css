@@ -4,6 +4,12 @@
   /* IE9 Compat Modes */
   src: url("fonts/Oneer.eot?#iefix") format("embedded-opentype"), url("fonts/Oneer.ttf") format("truetype"), url("fonts/Oneer.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
+@font-face {
+  font-family: 'Orator-Std';
+  src: url("fonts/Orator-Std.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Orator-Std.eot?#iefix") format("embedded-opentype"), url("fonts/Orator-Std.ttf") format("truetype"), url("fonts/Orator-Std.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 html,
 body {
   background-color: #000;
@@ -33,6 +39,7 @@ a {
 
 h1 {
   font-size: 27rem;
+  letter-spacing: 1rem;
   line-height: 18rem;
   margin: 0 auto;
   max-width: 1400px;
@@ -97,11 +104,14 @@ section {
 @media only screen and (max-width: 700px) {
   .enterwild div:before, .enterwild div:after {
     content: none; } }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
+  .header {
+    margin-top: 1.8vh; }
+
   .enterwild {
     height: auto;
     margin: 0 auto;
-    width: 90%; } }
+    width: 80%; } }
 /* END section one logic */
 /** START section two logic **/
 .two {
@@ -215,9 +225,16 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: center;
+  justify-content: center; }
   .dope .coming-soon {
-    text-align: center;
-    font-size: 5rem; }
+    font-family: Orator-Std, san-serif;
+    font-size: 5rem;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
