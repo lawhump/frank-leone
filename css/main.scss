@@ -1,13 +1,8 @@
-$space: 15px;
-$padding: 20px;
-
-@mixin center-this($top) {
-    position: absolute;
-    top: $top;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+@mixin flex-center() {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
 }
 
 @mixin disable-horizontal-scrolling() {
@@ -25,12 +20,13 @@ $padding: 20px;
 
 html, 
 body {
-    font-size: 80%;
     background-color: #000;
     @include disable-horizontal-scrolling();
-    
     font-family: Oneer;
 }
+
+html { font-size: 62.5%; }
+body { font-size: 1.6rem; line-height: 2.56rem; text-rendering: optimizeLegibility; }
 
 h1,
 h2,
@@ -40,176 +36,260 @@ h5,
 h6,
 p,
 a {
-    font-family: Oneer;
+    color: #fff;
+    font-family: Oneer, san-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 27rem; 
+    line-height: 18rem;
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 90%;
+}
+
+h2 { 
+    font-size: 15rem;
+    line-height: 12rem;
+}
+
+h3 { font-size: 12rem; }
+
+h4 { 
+    font-size: 9rem; 
+    line-height: 8rem;
+    text-transform: uppercase;
 }
 
 ul {
     list-style: none;
-}
-
-.invis {
-    display: none;
-}
-
-.vis {
-    display: block;
+    padding: 0;
 }
 
 a {
     color: #fff;
+    display: inline-block;
     text-decoration: none;
 }
 
 section {
-    position: relative;
     height: 105vh;
-    min-height: 750px;
-    
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    text-align: center;
+    width: 100vw;
 }
 
+/* Start section one logic */
 .one {
-    .header {
-        display: none;
-        
-        position: relative;
-        top: 10%;
-        left: 0px;
-        width: 100%;
-        height: auto;
+    height: 100vh;
+    min-height: 750px;
+}
 
-        text-align: center;
-        font-size: 10rem;
-        color: #fff;
+.header {
+    margin-top: 9vh;
+}
 
-        h1 {
-            margin: 0;  
-            line-height: 160px;
-        }
-        
-        .line-break {
-            display: none;
-        }
-    }
+.line-break { display: none; }
 
-    .links {
-        ul {
-            padding: 0;    
-        }
-        
-        display: none;
-        
-        position: relative;
-        top: 15%;
-        left: 0%;
-        
-        text-align: center;
-        
-        a {
-            font-size: 6rem;
-        }
-    }
+.links { margin-top: 5vh; }
 
-    .enterwild {
-        display: none;
-        
-        width: 100%;
-        position: relative;
-        top: 20%;
+.enterwild {
+    margin-top: 5vh;
+    width: 100%;
 
+    div {
         &:before,
         &:after {
-            content: '! ! !';
-            
-            position: absolute;
-            top: 0;
-            right: calc(50% + 200px);
-            
             color: #fff;
+            content: '! ! !';            
             font-size: 160px;
-            
-            width: 180px;
             height: 160px;
-        }
-
-        &:after {
-            left: calc(50% + 200px);
-            right: auto;
+            left: 0;
+            position: relative;
+            top: -35px;
+            width: 180px;
         }
     }
 }
 
-.two {
-    .social-media {
-        position: absolute;
-        @include center-this(45%);
+@media only screen and (max-width: 1150px) {
+    .header { margin-top: 3vh; }
+}
 
-        color: #fff;
-        text-align: center;
-            
-        a {
-            font-size: 12rem;
-            line-height: 118px;
-            height: 120px;
-        }
-    }
-
-    .decorative-stuff {
-        position: absolute;
-        top: 90%;
-        width: 100%;
-
-        #tellem {
-            float: left;
-            padding-left: $padding;
-        }
-
-        #howl {
-            float: right;
-            padding-right: $padding;
-
-            &:hover {
-                cursor: pointer;
+@media only screen and (max-width: 700px) {
+    .enterwild {
+        div {
+            &:before,
+            &:after {
+                content: none;
             }
         }
     }
 }
 
-.three {
-    img {
-        width: 100vw;
-        height: 105vh;
-        min-height: 750px;
-    }
-    
-    div.sc-wrapper {
-        width: 100%;
+// @media only screen and (max-width: 480px) {
+//     .enterwild {
+//         margin-top: 25vh;
+//     }
+// }
+
+@media only screen and (max-width: 320px) {
+    .enterwild {
+        height: auto;
         margin: 0 auto;
-        iframe {
-            display: block;
-            margin: 0 auto;
+        width: 90%;
+    }
+}
+
+/* END section one logic */
+
+/** START section two logic **/
+.two {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.decorative-stuff {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.howl {
+    float: right;
+    margin-right: 2rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/** END section two logic **/
+
+/*** START section three logic ***/
+
+.three {
+    // background-color: #ccc;
+    height: auto;
+
+    .grid { margin: 5rem auto; }
+
+    .grid-item {
+        margin-bottom: 10px;
+        height: 300px;
+    }
+
+    .grid-item--height2 {
+        height: 450px;
+    }
+
+    .grid-item--height3 {
+        height: 600px;
+    }
+
+    .grid-item,
+    .grid-sizer {
+        width: 24%;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .tall { height: 450px; }
+
+    .taller { height: 600px; }
+
+    .sc { position: relative; }
+
+    iframe { postion: absolute; top: 0; left: 0; z-index: 2; }
+
+    @media only screen and (max-width: 1365px) {
+        .grid-item,
+        .grid-sizer {
+            width: 32%;
+        }
+    }
+
+    @media only screen and (max-width: 950px) {
+        .grid-item,
+        .grid-sizer {
+            width: 48%;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .grid-item,
+        .grid-sizer {
+            width: 96%;
         }
     }
 }
 
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+    .three {
+        display: none;
+    }
+}
+
+/*** END section three logic ***/
+
+/**** START section four logic ****/
+
 .four {
     color: #fff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
     text-align: center;
     
     div {
-        @include center-this(55%);
-        
-        h3 {
-            font-size: 7rem;    
+        h4 {
+            margin: 0 auto;
+            max-width: 95%;
         }
         
-        h3:nth-child(2) {
-            margin-top: 20%;    
+        h4:nth-child(2) {
+            margin-top: 10%;    
         }
+    }
+}
+
+/**** END section four logic ****/
+
+@media only screen and (max-width: 768px) {
+    html { font-size: 52.5%; }
+}
+
+@media only screen and (max-width: 600px) {
+    html { font-size: 47.5%; }
+}
+
+@media only screen and (max-width: 480px) {
+    html { font-size: 38.5%; }
+}
+
+@media only screen and (max-width: 320px) {
+    html { font-size: 35.5%; }
+
+    h1 {
+        font-size: 22rem; 
+        line-height: 14rem;
     }
 }
 
@@ -228,153 +308,6 @@ section {
     
     .coming-soon {
         text-align: center;
-        @include center-this(50%);
         font-size: 5rem;
-    }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-    .one {
-        .header {
-            font-size: 7.9rem;       
-        }
-    }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    .one {
-        .header {
-            font-size: 7.4rem;
-        }
-    }
-    
-    .four {
-        div {
-            h3 {
-                font-size: 5.8rem;    
-            }    
-        }
-    }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .one {
-        .header {
-            font-size: 6.7rem;
-            top: 5%;
-            
-            .line-break {
-                display: block;    
-            }
-        }
-    
-        .links {
-            top: 6%;    
-        }
-        
-        .enterwild {
-            top: 10%;
-            
-            &:before,
-            &:after {
-                content: none;
-            }
-        }
-        
-        
-    }
-    
-    .two {
-        .social-media {
-            a {
-                font-size: 8rem;    
-            }
-        }
-        .decorative-stuff {
-            #tellem {
-                width: 65%;    
-            }
-        }
-    }
-    
-    .three {
-        height: auto;
-        min-height: 350px;
-    }
-    
-    .four {
-        div {
-            h3 {
-                font-size: 4.2rem;    
-            }    
-        }
-    }
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-    .one {
-        .header {
-            top: 12px;
-            font-size: 5.5rem;
-        }
-        
-        .links {
-            top: 2.5%    
-        }
-        
-        .enterwild {
-            top: 5%;    
-        }
-    }
-    
-    .two {
-        .social-media {
-            a {
-                font-size: 8rem;    
-            }
-        }
-        
-        .decorative-stuff {
-            #tellem {
-                width: 55%;    
-            }
-        }
-    }
-}
-
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
-    .one {
-        .header {
-            font-size: 3rem;       
-        }
-        
-        .links {
-            top: 2.5%    
-        }
-        
-        .enterwild {
-            top: 5%;    
-        }
-    }
-    
-    .two {
-        .social-media {
-            a {
-                font-size: 8rem;    
-            }
-        }
-    }
-    
-    .four {
-        div {
-            h3 {
-                font-size: 1.8rem;    
-            }    
-        }
     }
 }
