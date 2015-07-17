@@ -50,24 +50,27 @@ a {
 }
 
 h1 {
-    font-size: 27rem;
+    font-size: 20.5rem;
     letter-spacing: 1rem;
-    line-height: 18rem;
+    line-height: 14rem;
     margin: 0 auto;
     max-width: 1400px;
     width: 90%;
 }
 
 h2 { 
-    font-size: 15rem;
-    line-height: 12rem;
+    font-size: 11rem;
+    line-height: 10rem;
 }
 
-h3 { font-size: 12rem; }
+h3 {
+    font-size: 8rem;
+    line-height: 4.8rem;
+}
 
 h4 { 
-    font-size: 9rem; 
-    line-height: 8rem;
+    font-size: 6rem; 
+    line-height: 5.4rem;
     text-transform: uppercase;
 }
 
@@ -111,21 +114,42 @@ section {
         &:after {
             color: #fff;
             content: '! ! !';            
-            font-size: 160px;
-            height: 160px;
+            font-size: 16rem;
+            height: 16rem;
             left: 0;
             position: relative;
-            top: -35px;
-            width: 180px;
+            top: -3.5rem;
+            width: 17rem;
         }
     }
 }
 
-@media only screen and (max-width: 1268px) {
+@media only screen and (max-width: 1000px) {
+    .enterwild { margin-top: 1.5vh; }
+}
+
+@media only screen and (max-width: 896px) {
     .header { margin-top: 3vh; }
+    .enterwild { margin-top: 1.5vh; }
 }
 
 @media only screen and (max-width: 700px) {
+    .enterwild {
+        div {
+            &:before,
+            &:after {
+                // content: none;
+                font-size: 12rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 { line-height: 12rem; }
+}
+
+@media only screen and (max-width: 500px) {
     .enterwild {
         div {
             &:before,
@@ -137,7 +161,9 @@ section {
 }
 
 @media only screen and (max-width: 480px) {
-    .header { margin-top: 1.8vh; }
+    h1 { line-height: 10rem; }
+    h4 { font-size: 7rem; }
+    .header { margin-top: 4.8vh; }
 
     .enterwild {
         height: auto;
@@ -202,7 +228,6 @@ and (max-device-width: 480px) {
 /*** START section three logic ***/
 
 .three {
-    // background-color: #ccc;
     height: auto;
 
     .grid { margin: 5rem auto; }
@@ -284,18 +309,26 @@ and (max-device-width: 480px) {
     text-align: center;
     
     div {
-        h4 {
+        > * {
             margin: 0 auto;
             max-width: 95%;
         }
         
-        h4:nth-child(2) {
+        h4 {
             margin-top: 10%;    
         }
     }
 }
 
 /**** END section four logic ****/
+
+@media only screen and (max-width: 1200px) {
+    html { font-size: 60%; }
+}
+
+@media only screen and (max-width: 992px) {
+    html { font-size: 56.5%; }
+}
 
 @media only screen and (max-width: 768px) {
     html { font-size: 52.5%; }
