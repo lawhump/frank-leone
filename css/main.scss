@@ -74,6 +74,16 @@ h4 {
     text-transform: uppercase;
 }
 
+h5 {
+    font-size: 5rem; 
+    line-height: 4rem;
+}
+
+h6 {
+    font-size: 4.2rem; 
+    line-height: 3.4rem;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -214,6 +224,11 @@ and (max-device-width: 480px) {
     width: 100%;
 }
 
+.props {
+    float: left;
+    margin-left: 2rem;
+}
+
 .howl {
     float: right;
     margin-right: 2rem;
@@ -229,26 +244,6 @@ and (max-device-width: 480px) {
 
 .three {
     height: auto;
-
-    .grid { margin: 5rem auto; }
-
-    .grid-item {
-        margin-bottom: 10px;
-        height: 300px;
-    }
-
-    .grid-item--height2 {
-        height: 450px;
-    }
-
-    .grid-item--height3 {
-        height: 600px;
-    }
-
-    .grid-item,
-    .grid-sizer {
-        width: 24%;
-    }
 
     img {
         height: 300px;
@@ -285,6 +280,26 @@ and (max-device-width: 480px) {
     }
 }
 
+.grid { margin: 5rem auto; }
+
+.grid-item {
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.grid-item--height2 {
+    height: 450px;
+}
+
+.grid-item--height3 {
+    height: 600px;
+}
+
+.grid-item,
+.grid-sizer {
+    width: 24%;
+}
+
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 480px) {
@@ -297,6 +312,10 @@ and (max-device-width: 480px) {
 /*** END section three logic ***/
 
 /**** START section four logic ****/
+
+footer {
+    text-align: center;
+}
 
 .four {
     color: #fff;

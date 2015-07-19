@@ -58,6 +58,14 @@ h4 {
   line-height: 5.4rem;
   text-transform: uppercase; }
 
+h5 {
+  font-size: 5rem;
+  line-height: 4rem; }
+
+h6 {
+  font-size: 4.2rem;
+  line-height: 3.4rem; }
+
 ul {
   list-style: none;
   padding: 0; }
@@ -162,6 +170,10 @@ section {
   position: absolute;
   width: 100%; }
 
+.props {
+  float: left;
+  margin-left: 2rem; }
+
 .howl {
   float: right;
   margin-right: 2rem; }
@@ -172,18 +184,6 @@ section {
 /*** START section three logic ***/
 .three {
   height: auto; }
-  .three .grid {
-    margin: 5rem auto; }
-  .three .grid-item {
-    margin-bottom: 10px;
-    height: 300px; }
-  .three .grid-item--height2 {
-    height: 450px; }
-  .three .grid-item--height3 {
-    height: 600px; }
-  .three .grid-item,
-  .three .grid-sizer {
-    width: 24%; }
   .three img {
     height: 300px;
     width: 300px; }
@@ -211,11 +211,31 @@ section {
     .three .grid-sizer {
       width: 96%; } }
 
+.grid {
+  margin: 5rem auto; }
+
+.grid-item {
+  margin-bottom: 10px;
+  height: 300px; }
+
+.grid-item--height2 {
+  height: 450px; }
+
+.grid-item--height3 {
+  height: 600px; }
+
+.grid-item,
+.grid-sizer {
+  width: 24%; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .three {
     display: none; } }
 /*** END section three logic ***/
 /**** START section four logic ****/
+footer {
+  text-align: center; }
+
 .four {
   color: #fff;
   display: -webkit-flex;
