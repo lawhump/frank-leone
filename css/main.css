@@ -90,10 +90,17 @@ section {
 /* Start section one logic */
 .one {
   height: 100vh;
-  min-height: 750px; }
+  min-height: 750px;
+  position: relative; }
 
-.header {
-  margin-top: 9vh; }
+.landing {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 98%; }
 
 .line-break {
   display: none; }
@@ -118,9 +125,6 @@ section {
   .enterwild {
     margin-top: 1.5vh; } }
 @media only screen and (max-width: 896px) {
-  .header {
-    margin-top: 3vh; }
-
   .enterwild {
     margin-top: 1.5vh; } }
 @media only screen and (max-width: 700px) {
@@ -139,9 +143,6 @@ section {
   h4 {
     font-size: 7rem; }
 
-  .header {
-    margin-top: 4.8vh; }
-
   .enterwild {
     height: auto;
     margin: 0 auto;
@@ -155,6 +156,9 @@ section {
   h1 {
     font-size: 22rem;
     line-height: 14rem; }
+
+  .landing {
+    top: 35%; }
 
   .enterwild {
     margin-top: 1.8vh; } }
@@ -179,11 +183,11 @@ section {
 
 .props {
   float: left;
-  margin-left: 2rem; }
+  margin-left: 5vw; }
 
 .howl {
   float: right;
-  margin-right: 2rem; }
+  margin-right: 5vw; }
   .howl:hover {
     cursor: pointer; }
 
@@ -264,7 +268,7 @@ footer {
     display: block;
     margin: 0 auto;
     max-width: 400px;
-    width: 95%; }
+    width: 85%; }
   footer small:nth-child(1) {
     margin-bottom: 3.8rem; }
   footer small:nth-child(2) {

@@ -113,10 +113,21 @@ section {
 .one {
     height: 100vh;
     min-height: 750px;
+    position: relative;
+}
+
+.landing {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+    width: 98%;
 }
 
 .header {
-    margin-top: 9vh;
+    // margin-top: 9vh;
 }
 
 .line-break { display: none; }
@@ -147,7 +158,6 @@ section {
 }
 
 @media only screen and (max-width: 896px) {
-    .header { margin-top: 3vh; }
     .enterwild { margin-top: 1.5vh; }
 }
 
@@ -181,7 +191,6 @@ section {
 @media only screen and (max-width: 480px) {
     h1 { line-height: 10rem; }
     h4 { font-size: 7rem; }
-    .header { margin-top: 4.8vh; }
 
     .enterwild {
         height: auto;
@@ -205,6 +214,8 @@ and (max-device-width: 480px) {
         font-size: 22rem; 
         line-height: 14rem;
     }
+
+    .landing { top: 35%; }
 
     .enterwild { margin-top: 1.8vh; }
 }
@@ -234,12 +245,12 @@ and (max-device-width: 480px) {
 
 .props {
     float: left;
-    margin-left: 2rem;
+    margin-left: 5vw;
 }
 
 .howl {
     float: right;
-    margin-right: 2rem;
+    margin-right: 5vw;
 
     &:hover {
         cursor: pointer;
@@ -354,7 +365,7 @@ footer {
         display: block;
         margin: 0 auto;
         max-width: 400px;
-        width: 95%;
+        width: 85%;
     }
 
     small:nth-child(1) {
