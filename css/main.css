@@ -108,6 +108,11 @@ section {
 .links {
   margin-top: 5vh; }
 
+ul a:hover h4:before,
+ul a:hover h4:after {
+  color: #fff;
+  content: " !!! "; }
+
 .enterwild {
   margin-top: 5vh;
   width: 100%; }
@@ -175,6 +180,10 @@ section {
 
 .social-media {
   text-align: center; }
+  .social-media a:hover h2:before,
+  .social-media a:hover h2:after {
+    color: #fff;
+    content: " !!! "; }
 
 .decorative-stuff {
   bottom: 0;

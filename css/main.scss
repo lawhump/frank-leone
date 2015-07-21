@@ -134,6 +134,16 @@ section {
 
 .links { margin-top: 5vh; }
 
+ul {
+    a:hover {
+        h4:before,
+        h4:after {
+            color: #fff;
+            content: " !!! ";
+        }
+    }
+}
+
 .enterwild {
     margin-top: 5vh;
     width: 100%;
@@ -235,6 +245,14 @@ and (max-device-width: 480px) {
 
 .social-media {
     text-align: center;
+
+    a:hover {
+        h2:before,
+        h2:after {
+            color: #fff;
+            content: " !!! ";
+        }
+    }
 }
 
 .decorative-stuff {
