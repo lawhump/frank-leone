@@ -32,7 +32,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+small {
   color: #fff;
   font-family: Oneer, san-serif;
   margin: 0; }
@@ -60,11 +61,17 @@ h4 {
 
 h5 {
   font-size: 5rem;
+  letter-spacing: .2rem;
   line-height: 4rem; }
 
 h6 {
   font-size: 4.2rem;
+  letter-spacing: .15rem;
   line-height: 3.4rem; }
+
+small {
+  font-size: 2.8rem;
+  letter-spacing: .1rem; }
 
 ul {
   list-style: none;
@@ -233,9 +240,6 @@ section {
     display: none; } }
 /*** END section three logic ***/
 /**** START section four logic ****/
-footer {
-  text-align: center; }
-
 .four {
   color: #fff;
   display: -webkit-flex;
@@ -245,13 +249,27 @@ footer {
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center; }
-  .four div > * {
-    margin: 0 auto;
-    max-width: 95%; }
-  .four div h4 {
-    margin-top: 10%; }
+  .four div {
+    margin-bottom: 20vh; }
+    .four div > * {
+      margin: 0 auto;
+      max-width: 95%; }
+    .four div h4 {
+      margin-top: 3%; }
 
 /**** END section four logic ****/
+footer {
+  text-align: center; }
+  footer small {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 95%; }
+  footer small:nth-child(1) {
+    margin-bottom: 3.8rem; }
+  footer small:nth-child(2) {
+    margin-bottom: 1.2rem; }
+
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 60%; } }
