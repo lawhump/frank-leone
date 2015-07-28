@@ -1,41 +1,29 @@
-$(window).resize(function(){
-    var width = $(window).width();
+window.onresize = function() {
+    var width = window.innerWidth;
 
     if(width <= 420){
         // split email
-        $(".four a h3").html("LEONEMUSICAL @GMAIL.COM");
+        document.querySelector(".four a h3").innerHTML("LEONEMUSICAL @GMAIL.COM");
     }
     else{
         // make email one line
-        $(".four a h3").html("LEONEMUSICAL@GMAIL.COM");
+        document.querySelector(".four a h3").innerHTML("LEONEMUSICAL@GMAIL.COM");
     }
-})
-.resize();
+};
 
 function initGrid() {
     imagesLoaded('.grid', function() {
-        // init Masonry
-        var $grid = $('.grid').masonry({
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry( elem, {
             // options
             itemSelector: '.grid-item',
             isFitWidth: true,
             columnWidth: '.grid-sizer',
             gutter: 10
         });
-
-        // $grid.on( 'click', '.grid-item', function() {
-        //     // change size of item via class
-        //     $( this ).toggleClass('grid-item--');
-        //     // trigger layout
-        //     $grid.masonry();
-        // });
     });
 }
 
-$(document).ready(function () {
-    // $('div.header').fadeIn(2500).removeClass('hidden');
-    // $('div.links').delay(2200).fadeIn(800).removeClass('hidden');
-    // $('div.enterwild').delay(3400).fadeIn(800).removeClass('hidden');
-
+document.addEventListener("DOMContentLoaded", function(event) { 
     initGrid();
 });

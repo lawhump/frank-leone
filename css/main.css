@@ -203,7 +203,8 @@ ul a:hover h4:after {
 /** END section two logic **/
 /*** START section three logic ***/
 .three {
-  height: auto; }
+  height: auto;
+  text-align: center; }
   .three img {
     height: 300px;
     width: 300px; }
@@ -230,6 +231,13 @@ ul a:hover h4:after {
     .three .grid-item,
     .three .grid-sizer {
       width: 96%; } }
+
+.album-name {
+  margin: 0 auto;
+  max-width: 100vw;
+  opacity: 1.0;
+  -webkit-transform: translate3d(0, 52%, 0);
+  transform: translate3d(0, 52%, 0); }
 
 .grid {
   margin: 5rem auto; }
