@@ -775,7 +775,8 @@ ul a:hover h4:after {
 
 .album-name {
   letter-spacing: 1.3rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 90%; }
 
 .grid {
   margin: 5rem auto; }

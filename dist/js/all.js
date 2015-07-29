@@ -25,7 +25,9 @@ function initGrid() {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     initGrid();
-    var s = skrollr.init({forceHeight: false}, {smoothScrolling:true});
+    window.onload = function() {
+        var s = skrollr.init({forceHeight: false}, {smoothScrolling:true});
+    };
 });
 // Avoid `console` errors in browsers that lack a console.
 (function() {
