@@ -3,7 +3,6 @@ var gulp = require('gulp');
 
 // Include Our Plugins
 var sass = require('gulp-sass');
-var concatCSS = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var uglify = require('gulp-uglify');

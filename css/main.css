@@ -216,7 +216,11 @@ ul a:hover h4:after {
   text-align: center; }
   .three img {
     height: 300px;
+    opacity: .6;
+    transition: opacity 0.3s ease-in-out;
     width: 300px; }
+    .three img:hover {
+      opacity: .9; }
   .three .tall {
     height: 450px; }
   .three .taller {
@@ -242,11 +246,9 @@ ul a:hover h4:after {
       width: 96%; } }
 
 .album-name {
+  letter-spacing: 1.3rem;
   margin: 0 auto;
-  max-width: 100vw;
-  opacity: 1.0;
-  -webkit-transform: translate3d(0, 52%, 0);
-  transform: translate3d(0, 52%, 0); }
+  max-width: 90%; }
 
 .grid {
   margin: 5rem auto; }

@@ -3,19 +3,18 @@ window.onresize = function() {
 
     if(width <= 420){
         // split email
-        document.querySelector(".four a h3").innerHTML("LEONEMUSICAL @GMAIL.COM");
+        document.querySelector(".four a h3").innerHTML="LEONEMUSICAL @GMAIL.COM";
     }
     else{
         // make email one line
-        document.querySelector(".four a h3").innerHTML("LEONEMUSICAL@GMAIL.COM");
+        document.querySelector(".four a h3").innerHTML="LEONEMUSICAL@GMAIL.COM";
     }
 };
 
 function initGrid() {
     imagesLoaded('.grid', function() {
-        var elem = document.querySelector('.grid');
+        var elem = document.getElementsByClassName('.grid');
         var msnry = new Masonry( elem, {
-            // options
             itemSelector: '.grid-item',
             isFitWidth: true,
             columnWidth: '.grid-sizer',
@@ -26,4 +25,5 @@ function initGrid() {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     initGrid();
+    var s = skrollr.init({forceHeight: false}, {smoothScrolling:true});
 });

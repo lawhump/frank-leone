@@ -285,7 +285,13 @@ and (max-device-width: 480px) {
 
     img {
         height: 300px;
+        opacity: .6;
+        transition: opacity 0.3s ease-in-out;
         width: 300px;
+
+        &:hover {
+            opacity: .9;
+        }
     }
 
     .tall { height: 450px; }
@@ -319,11 +325,9 @@ and (max-device-width: 480px) {
 }
 
 .album-name {
+    letter-spacing: 1.3rem;
     margin: 0 auto;
-    max-width: 100vw;
-    opacity: 1.0;
-    -webkit-transform: translate3d(0,52%,0);
-    transform: translate3d(0,52%,0);
+    max-width: 90%;
 }
 
 .grid { margin: 5rem auto; }
