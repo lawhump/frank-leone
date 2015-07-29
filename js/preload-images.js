@@ -3,7 +3,7 @@ var container = imagesLoaded('.three');
 function getParent(el) {
     var p = el.parentNode;
 
-    while (!p.className.includes('grid-item')) {
+    while (p.className.indexOf('grid-item') < 0) {
         p = p.parentNode;
     }
     return p;
