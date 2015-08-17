@@ -61,6 +61,7 @@ h1 {
 
 h2 { 
     font-size: 11rem;
+    letter-spacing: .5rem;
     line-height: 10rem;
 }
 
@@ -95,6 +96,14 @@ small {
 ul {
     list-style: none;
     padding: 0;
+
+    a:hover {
+        h4:before,
+        h4:after {
+            color: #fff;
+            content: " !!! ";
+        }
+    }
 }
 
 a {
@@ -107,6 +116,10 @@ section {
     height: 105vh;
     text-align: center;
     width: 100vw;
+}
+
+.emphasis {
+    color: #8B0000;
 }
 
 /* Start section one logic */
@@ -133,16 +146,6 @@ section {
 .line-break { display: none; }
 
 .links { margin-top: 5vh; }
-
-ul {
-    a:hover {
-        h4:before,
-        h4:after {
-            color: #fff;
-            content: " !!! ";
-        }
-    }
-}
 
 .enterwild {
     margin-top: 5vh;
@@ -285,12 +288,12 @@ and (max-device-width: 480px) {
 
     img {
         height: 300px;
-        opacity: .6;
+        opacity: .9;
         transition: opacity 0.3s ease-in-out;
         width: 300px;
 
         &:hover {
-            opacity: .9;
+            opacity: 1;
         }
     }
 
