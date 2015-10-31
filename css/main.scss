@@ -369,6 +369,19 @@ and (max-device-width: 480px) {
     width: 24%;
 }
 
+.grid-item--width2 {
+    width: 38%;
+}
+
+.treehome {
+    margin: 0 auto;
+    
+    img {
+        height: 500px;
+        width: 500px;
+    }
+}
+
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 480px) {
