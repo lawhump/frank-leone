@@ -121,8 +121,7 @@ section {
 .enterwild {
   margin-top: 5vh;
   width: 100%; }
-  .enterwild div:before,
-  .enterwild div:after {
+  .enterwild div:before, .enterwild div:after {
     color: #fff;
     content: '! ! !';
     font-size: 16rem;
@@ -141,8 +140,7 @@ section {
     margin-top: 1.5vh; } }
 
 @media only screen and (max-width: 700px) {
-  .enterwild div:before,
-  .enterwild div:after {
+  .enterwild div:before, .enterwild div:after {
     font-size: 12rem; } }
 
 @media only screen and (max-width: 600px) {
@@ -150,8 +148,7 @@ section {
     line-height: 12rem; } }
 
 @media only screen and (max-width: 500px) {
-  .enterwild div:before,
-  .enterwild div:after {
+  .enterwild div:before, .enterwild div:after {
     content: none; } }
 
 @media only screen and (max-width: 480px) {

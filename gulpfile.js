@@ -1,5 +1,5 @@
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include Our Plugins
 var sass = require('gulp-sass');
@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var server = require('gulp-webserver');
 
 
 // Compile Our Sass
@@ -35,6 +36,14 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
+gulp.task('webserver', function() {
+  gulp.src('./')
+    .pipe(server({
+      livereload: true,
+      open: true
+    }));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['scripts']);
@@ -42,4 +51,6 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['sass', 'scripts', 'styles', 'watch']);
+gulp.task('default', ['sass', 'scripts', 'styles', 'webserver']);
+
+gulp.task('build', ['sass', 'scripts', 'styles']);
