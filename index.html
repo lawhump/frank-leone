@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/ >
         <link rel="stylesheet" href="dist/css/all.min.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -21,7 +21,25 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
+          <defs>
+            <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#202020" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="#2f2f2f" stop-opacity="1"></stop>
+            </linearGradient>
+          </defs>
+
+          <mask id="title-mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+            <linearGradient id="fade_right_svg_gradient" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+               <stop offset="30%" stop-color="#fff" stop-opacity="1"></stop>
+              <stop offset="67%" stop-color="#111" stop-opacity="1"></stop>
+            </linearGradient>
+
+            <rect x="0" y="0" width="1" height="1" fill="url(#fade_right_svg_gradient)"></rect>
+          </mask>
+      	</svg>
+
         <section class="one">
             <div class="landing">
                 <div class="header"><h1>FRaNK<br class="line-break"> LEoNE</h1></div>
@@ -56,9 +74,18 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="three">
-        <h1 data-bottom="opacity: 0.5; transform: translateY(42%);" data-top-bottom="opacity: 0.2; transform: translateY(92%);" class="album-name">DEATH GRIP</h1>
+          <h1 data-bottom="transform: translateY(62%);" data-top-bottom="transform: translateY(92%);" class="album-name">
+            <svg width="100%" height="18.5rem">
+              <rect x="0" y="0" width="100%" height="18.5rem"></rect>
+              <text x="50%" y="9.25rem"
+              text-anchor="middle"
+              alignment-baseline="central"
+              fill="url(#title-gradient)"
+              mask="url(#title-mask)">DEATH GRIPS</text>
+            </svg>
+          </h1>
             <div class="grid js-masonry">
                 <div class="grid-sizer"></div>
                 <div class="grid-item is-loading sc">
@@ -108,19 +135,16 @@
                 </div>
             </div>
 
-
-            <!-- <h1 data-bottom="opacity: 0.5; transform: translateY(42%);" data-top-bottom="opacity: 0.2; transform: translateY(92%);" class="album-name">TREEHOME95</h1>
-            <div class="grid js-masonry">
-                <div class="grid-sizer"></div>
-                <div class="grid-item grid-item--width2 grid-item--height3 treehome is-loading sc">
-                    <a href="https://soundcloud.com/leonemusic/paradise-lost-1">
-                        <img src="img/masonry/treehome.jpg">
-                    </a>
-                </div>
-            </div> -->
-
-
-            <h1 data-bottom="opacity: 0.5; transform: translateY(42%);" data-top-bottom="opacity: 0.2; transform: translateY(92%);" class="album-name">ENTER WILD</h1>
+            <h1 data-bottom="transform: translateY(62%);" data-top-bottom="transform: translateY(92%);" class="album-name">
+              <svg width="100%" height="18.5rem">
+                <rect x="0" y="0" width="100%" height="18.5rem"></rect>
+                <text x="50%" y="9.25rem"
+                text-anchor="middle"
+                alignment-baseline="central"
+                fill="url(#title-gradient)"
+                mask="url(#title-mask)">ENTER WILD</text>
+              </svg>
+            </h1>
             <div class="grid js-masonry">
                 <div class="grid-sizer"></div>
                 <div class="grid-item is-loading">
@@ -211,7 +235,16 @@
                 </div>
             </div>
 
-            <h1 data-bottom="opacity: 0.5; transform: translateY(42%);" data-top-bottom="opacity: 0.2; transform: translateY(92%);" class="album-name">DEEP OCEAN</h1>
+            <h1 data-bottom="transform: translateY(62%);" data-top-bottom="transform: translateY(92%);" class="album-name">
+              <svg width="100%" height="18.5rem">
+                <rect x="0" y="0" width="100%" height="18.5rem"></rect>
+                <text x="50%" y="9.25rem"
+                text-anchor="middle"
+                alignment-baseline="central"
+                fill="url(#title-gradient)"
+                mask="url(#title-mask)">DEEP OCEAN</text>
+              </svg>
+            </h1>
 
             <div class="grid js-masonry">
                 <!-- <div class="grid-sizer"></div> -->
@@ -262,7 +295,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="four" id="credits">
             <div>
                 <a href="mailto:leonemusical@gmail.com"><h3>LEONEMUSICAL@GMAIL.COM</h3></a>
@@ -273,7 +306,7 @@
                 <small>THIS SITE WaS DESIGNED BY FRaNK & CONSTRUCTED BY LaWRENCE HUMPHREY</small>
 
                 <small>SEND HIM INQUIRIES | DEaTH THREaTS</small>
-                
+
                 <small><em><a href="http://www.lawrencehumphrey.com">LAWRENCEHUMPHREY.COM</a></em></small>
 
             </footer>

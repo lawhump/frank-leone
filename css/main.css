@@ -245,10 +245,13 @@ section {
     .three .grid-sizer {
       width: 96%; } }
 
-.album-name {
-  letter-spacing: 1.3rem;
+.album-name-wrapper {
   margin: 0 auto;
-  max-width: 90%; }
+  max-width: 90%;
+  text-align: center; }
+
+.album-name {
+  letter-spacing: 1.3rem; }
 
 .grid {
   margin: 5rem auto; }

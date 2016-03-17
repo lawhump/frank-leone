@@ -26,7 +26,7 @@
        url('fonts/Orator-Std/Orator-Std.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-html, 
+html,
 body {
     background-color: #000;
     @include disable-horizontal-scrolling();
@@ -59,7 +59,7 @@ h1 {
     width: 90%;
 }
 
-h2 { 
+h2 {
     font-size: 11rem;
     letter-spacing: .5rem;
     line-height: 10rem;
@@ -70,21 +70,21 @@ h3 {
     line-height: 4.8rem;
 }
 
-h4 { 
-    font-size: 6rem; 
+h4 {
+    font-size: 6rem;
     line-height: 5.4rem;
     text-transform: uppercase;
 }
 
 h5 {
-    font-size: 5rem; 
+    font-size: 5rem;
     letter-spacing: .2rem;
     line-height: 4rem;
 }
 
 h6 {
     font-size: 4.2rem;
-    letter-spacing: .15rem; 
+    letter-spacing: .15rem;
     line-height: 3.4rem;
 }
 
@@ -155,7 +155,7 @@ section {
         &:before,
         &:after {
             color: #fff;
-            content: '! ! !';            
+            content: '! ! !';
             font-size: 16rem;
             height: 16rem;
             left: 0;
@@ -215,16 +215,16 @@ section {
 
 @media only screen and (max-width: 320px) {
     h1 {
-        font-size: 22rem; 
+        font-size: 22rem;
         line-height: 14rem;
     }
 }
 
-@media only screen 
-and (min-device-width: 320px) 
+@media only screen
+and (min-device-width: 320px)
 and (max-device-width: 480px) {
     h1 {
-        font-size: 22rem; 
+        font-size: 22rem;
         line-height: 14rem;
     }
 
@@ -328,9 +328,7 @@ and (max-device-width: 480px) {
 }
 
 .album-name {
-    letter-spacing: 1.3rem;
-    margin: 0 auto;
-    max-width: 90%;
+  letter-spacing: 1.3rem;
 }
 
 .grid { margin: 5rem auto; }
@@ -375,15 +373,15 @@ and (max-device-width: 480px) {
 
 .treehome {
     margin: 0 auto;
-    
+
     img {
         height: 500px;
         width: 500px;
     }
 }
 
-@media only screen 
-and (min-device-width: 320px) 
+@media only screen
+and (min-device-width: 320px)
 and (max-device-width: 480px) {
 
     .three {
@@ -404,7 +402,7 @@ and (max-device-width: 480px) {
     -webkit-justify-content: center;
     justify-content: center;
     text-align: center;
-    
+
     div {
         margin-bottom: 20vh;
 
@@ -412,9 +410,9 @@ and (max-device-width: 480px) {
             margin: 0 auto;
             max-width: 95%;
         }
-        
+
         h4 {
-            margin-top: 3%;    
+            margin-top: 3%;
         }
     }
 }
@@ -464,23 +462,23 @@ footer {
     html { font-size: 35.5%; }
 }
 
-@media only screen 
-and (min-device-width: 320px) 
+@media only screen
+and (min-device-width: 320px)
 and (max-device-width: 480px) {
-    html { font-size: 32.5%; }    
+    html { font-size: 32.5%; }
 }
 
 // Clothes.html
 .dope {
     width: 100vw;
     height: 100vh;
-    
-    background: url(../img/TRANSMENTAL%20AND%20KING%20SUPERTRAMP%20WALLPAPER.jpg) no-repeat center center fixed; 
+
+    background: url(../img/TRANSMENTAL%20AND%20KING%20SUPERTRAMP%20WALLPAPER.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+
     color: #fff;
 
     display: -webkit-flex;
@@ -489,7 +487,7 @@ and (max-device-width: 480px) {
     flex-flow: column nowrap;
     -webkit-justify-content: center;
     justify-content: center;
-    
+
     .coming-soon {
         font-family: Orator-Std, san-serif;
         font-size: 3rem;
