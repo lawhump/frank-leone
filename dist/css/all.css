@@ -553,6 +553,7 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 2.56rem;
+  overflow: scroll !important;
   text-rendering: optimizeLegibility; }
 
 h1,
@@ -774,9 +775,7 @@ section {
       width: 96%; } }
 
 .album-name {
-  letter-spacing: 1.3rem;
-  margin: 0 auto;
-  max-width: 90%; }
+  letter-spacing: 1.3rem; }
 
 .grid {
   margin: 5rem auto; }

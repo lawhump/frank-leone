@@ -1,39 +1,45 @@
-// Include gulp
 var gulp = require('gulp');
-
-// Include Our Plugins
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var minifyCSS = require('gulp-minify-css');
-var uglify = require('gulp-uglify');
+var $    = require('gulp-load-plugins')();
 var rename = require('gulp-rename');
+var cssnano = require('gulp-cssnano');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 var server = require('gulp-webserver');
+var imagemin = require('gulp-imagemin');
 
 
-// Compile Our Sass
+// Concatenate and compile SCSS
 gulp.task('sass', function() {
-    gulp.src('css/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('css'));
-});
-
-gulp.task('styles', function() {
-    gulp.src(['css/normalize.css', 'css/main.css'])
-        .pipe(concat('all.css'))
-        .pipe(gulp.dest('dist/css'))
-        .pipe(minifyCSS())
-        .pipe(rename('all.min.css'))
-        .pipe(gulp.dest('dist/css'));
+  return gulp.src('dev/scss/main.scss')
+    .pipe($.sass()
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 9']
+    }))
+    .pipe(gulp.dest('dev/css'))
+    .pipe(cssnano())
+    .pipe(rename('all.min.css'))
+    .pipe(gulp.dest('dist/css'));
 });
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
+    return gulp.src(['dev/js/**/*.js', '!dev/js/vendor/**'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
+});
+
+
+gulp.task('images', () => {
+	return gulp.src('dev/img/**', {base: 'dev/img'})
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}]
+		}))
+		.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('webserver', function() {
@@ -44,13 +50,9 @@ gulp.task('webserver', function() {
     }));
 });
 
-// Watch Files For Changes
-gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['scripts']);
-    gulp.watch('css/*.scss', ['sass', 'styles']);
+gulp.task('default', ['sass', 'scripts', 'images', 'webserver'], function() {
+  gulp.watch(['dev/scss/**/*.scss'], ['sass']);
+  gulp.watch('dev/js/*.js', ['scripts']);
 });
 
-// Default Task
-gulp.task('default', ['sass', 'scripts', 'styles', 'webserver']);
-
-gulp.task('build', ['sass', 'scripts', 'styles']);
+gulp.task('build', ['sass', 'scripts']);
