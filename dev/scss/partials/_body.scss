@@ -1,3 +1,23 @@
+@include keyframes('fade-out-main') {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes('fade-in-main') {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Start section one logic */
 .one {
     display: -webkit-flex;
@@ -9,6 +29,16 @@
     height: 100vh;
     min-height: 75rem;
     position: relative;
+
+    &.active {
+      @include animation('fade-in-main .8 ease-out');
+      animation-fill-mode: forwards;
+    }
+
+    &.inactive {
+      @include animation('fade-out-main .8 ease-out');
+      animation-fill-mode: forwards;
+    }
 }
 
 @media only screen
@@ -126,6 +156,10 @@ and (max-device-width: 480px) {
     -webkit-justify-content: center;
     justify-content: center;
     position: relative;
+}
+
+.filmLink {
+  cursor: pointer;
 }
 
 .social-media {
