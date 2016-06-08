@@ -1,0 +1,39 @@
+.grid { margin: 5rem auto; }
+
+.grid-item {
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.grid-item.is-loading {
+    background-color: black;
+    background-image: url('http://desandro.github.io/imagesloaded/assets/loading.gif');
+
+    img {
+        opacity: 0;
+        -webkit-transition: opacity 0.4s;
+        -moz-transition: opacity 0.4s;
+        -ms-transition: opacity 0.4s;
+        transition: opacity 0.4s;
+    }
+}
+
+.grid-item--height2 {
+    height: 450px;
+}
+
+.grid-item--height3 {
+    height: 600px;
+}
+
+.grid-item,
+.grid-sizer {
+    width: 24%;
+}
+
+.grid-item--width2 {
+    width: 38%;
+}

@@ -1,15 +1,17 @@
-window.onresize = function() {
-    var width = window.innerWidth;
+var resize = function() {
+  var width = window.innerWidth;
 
-    if(width <= 420){
-        // split email
-        document.querySelector(".four a h3").innerHTML="LEONEMUSICAL @GMAIL.COM";
-    }
-    else{
-        // make email one line
-        document.querySelector(".four a h3").innerHTML="LEONEMUSICAL@GMAIL.COM";
-    }
+  if(width <= 420){
+    // split email
+    document.querySelector(".four a h3").innerHTML="LEONEMUSICAL @GMAIL.COM";
+  }
+  else{
+    // make email one line
+    document.querySelector(".four a h3").innerHTML="LEONEMUSICAL@GMAIL.COM";
+  }
 };
+
+
 
 function initGrid() {
     imagesLoaded('.grid', function() {
@@ -28,4 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     window.onload = function() {
         var s = skrollr.init({forceHeight: false}, {smoothScrolling:true});
     };
+    resize();
 });
+
+window.onresize = resize;

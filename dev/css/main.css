@@ -15,9 +15,8 @@
 html,
 body {
   background-color: #000;
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: Oneer; }
+  font-family: Oneer;
+  overflow-x: hidden; }
 
 html {
   font-size: 62.5%; }
@@ -38,14 +37,15 @@ a,
 small {
   color: #fff;
   font-family: Oneer, san-serif;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 h1 {
   font-size: 20.5rem;
   letter-spacing: 1rem;
   line-height: 14rem;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 140rem;
   width: 90%; }
 
 h2 {
@@ -94,8 +94,45 @@ section {
   text-align: center;
   width: 100vw; }
 
-.emphasis {
-  color: #8B0000; }
+footer {
+  text-align: center; }
+  footer small {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 85%; }
+  footer small:nth-child(1) {
+    margin-bottom: 3.8rem; }
+  footer small:nth-child(2) {
+    margin-bottom: 1.2rem; }
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 60%; } }
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 56.5%; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 52.5%; } }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 47.5%; } }
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 38.5%; } }
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 35.5%; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  html {
+    font-size: 32.5%; } }
 
 /* Start section one logic */
 .one {
@@ -109,17 +146,17 @@ section {
   -ms-flex-pack: center;
       justify-content: center;
   height: 100vh;
-  min-height: 750px;
+  min-height: 75rem;
   position: relative; }
 
-.landing {
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 98%; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .one {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .one h1 {
+      line-height: 9rem;
+      margin-top: -10%; } }
 
 .line-break {
   display: none; }
@@ -260,35 +297,17 @@ section {
 .album-name {
   letter-spacing: 1.3rem; }
 
-.grid {
-  margin: 5rem auto; }
+.album-name-mob {
+  display: none;
+  margin: 0 auto;
+  margin-bottom: -4rem;
+  opacity: .2; }
 
-.grid-item {
-  background-color: black;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 300px;
-  margin-bottom: 10px; }
-
-.grid-item.is-loading {
-  background-color: black;
-  background-image: url("http://desandro.github.io/imagesloaded/assets/loading.gif"); }
-  .grid-item.is-loading img {
-    opacity: 0;
-    transition: opacity 0.4s; }
-
-.grid-item--height2 {
-  height: 450px; }
-
-.grid-item--height3 {
-  height: 600px; }
-
-.grid-item,
-.grid-sizer {
-  width: 24%; }
-
-.grid-item--width2 {
-  width: 38%; }
+@media only screen and (max-width: 900px) {
+  .album-name {
+    display: none; }
+  .album-name-mob {
+    display: block; } }
 
 .treehome {
   margin: 0 auto; }
@@ -319,45 +338,35 @@ section {
       margin-top: 3%; }
 
 /**** END section four logic ****/
-footer {
-  text-align: center; }
-  footer small {
-    display: block;
-    margin: 0 auto;
-    max-width: 400px;
-    width: 85%; }
-  footer small:nth-child(1) {
-    margin-bottom: 3.8rem; }
-  footer small:nth-child(2) {
-    margin-bottom: 1.2rem; }
+.grid {
+  margin: 5rem auto; }
 
-@media only screen and (max-width: 1200px) {
-  html {
-    font-size: 60%; } }
+.grid-item {
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-bottom: 10px; }
 
-@media only screen and (max-width: 992px) {
-  html {
-    font-size: 56.5%; } }
+.grid-item.is-loading {
+  background-color: black;
+  background-image: url("http://desandro.github.io/imagesloaded/assets/loading.gif"); }
+  .grid-item.is-loading img {
+    opacity: 0;
+    transition: opacity 0.4s; }
 
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 52.5%; } }
+.grid-item--height2 {
+  height: 450px; }
 
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 47.5%; } }
+.grid-item--height3 {
+  height: 600px; }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 38.5%; } }
+.grid-item,
+.grid-sizer {
+  width: 24%; }
 
-@media only screen and (max-width: 320px) {
-  html {
-    font-size: 35.5%; } }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  html {
-    font-size: 32.5%; } }
+.grid-item--width2 {
+  width: 38%; }
 
 .dope {
   width: 100vw;
