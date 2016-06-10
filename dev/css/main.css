@@ -80,8 +80,8 @@ small {
 ul {
   list-style: none;
   padding: 0; }
-  ul a:hover h4:before,
-  ul a:hover h4:after {
+  ul li:hover h4:before,
+  ul li:hover h4:after {
     color: #fff;
     content: " !!! "; }
 
