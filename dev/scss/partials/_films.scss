@@ -1,0 +1,67 @@
+.films {
+  background-color: black;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  height: 100vh;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transform: translateX(5%);
+  transition: opacity .6s ease-out .3s,
+              z-index .6s ease-out .3s;
+  width: 100vw;
+  z-index: -10;
+
+  h2 {
+    &:after {
+      content: '→';
+      font-size: 80%;
+      opacity: 0;
+      transition: all .3s ease-out;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  h4 {
+    transform: translateX(-5%);
+
+    span {
+      cursor: pointer;
+    }
+
+    &:before {
+      content: '←';
+      font-size: 80%;
+      opacity: 0;
+      transition: all .3s ease-out;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .films h2 {
+    font-size: 10vmin;
+  }
+}

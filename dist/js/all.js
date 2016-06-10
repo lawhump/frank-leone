@@ -1,4 +1,3 @@
-var mainPage = document.querySelector('#skrollr-body');
 var filmPage = document.querySelector('.films');
 var back = document.querySelector('.back');
 
@@ -39,17 +38,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 window.onresize = resize;
 
 document.querySelector('.filmLink').addEventListener('click', function() {
-  mainPage.classList.remove('active');
-  mainPage.classList.add('inactive');
-  filmPage.classList.remove('inactive');
   filmPage.classList.add('active');
 });
 
 back.addEventListener('click', function() {
-  mainPage.classList.remove('inactive');
-  mainPage.classList.add('active');
   filmPage.classList.remove('active');
-  filmPage.classList.add('inactive');
 });
 
 // Avoid `console` errors in browsers that lack a console.
