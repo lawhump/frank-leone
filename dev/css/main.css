@@ -135,23 +135,11 @@ footer {
   html {
     font-size: 32.5%; } }
 
-@-webkit-keyframes fade-out-main {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
 @keyframes fade-out-main {
   0% {
     opacity: 1; }
   100% {
     opacity: 0; } }
-
-@-webkit-keyframes fade-in-main {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 @keyframes fade-in-main {
   0% {
@@ -161,32 +149,26 @@ footer {
 
 /* Start section one logic */
 .one {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column wrap;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center;
   height: 100vh;
   min-height: 75rem;
   position: relative; }
   .one.active {
-    -webkit-animation: fade-in-main .8 ease-out;
     animation: fade-in-main .8 ease-out;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards; }
+    animation-fill-mode: forwards; }
   .one.inactive {
-    -webkit-animation: fade-out-main .8 ease-out;
     animation: fade-out-main .8 ease-out;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards; }
+    animation-fill-mode: forwards; }
+  .one img {
+    width: 30rem; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .one {
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
         justify-content: center; }
     .one h1 {
@@ -260,13 +242,10 @@ footer {
 /* END section one logic */
 /** START section two logic **/
 .two {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center;
   position: relative; }
@@ -286,7 +265,8 @@ footer {
   position: absolute;
   width: 100%; }
 
-.props {
+.awaken {
+  cursor: pointer;
   float: left;
   margin-left: 5vw; }
 
@@ -357,13 +337,10 @@ footer {
 /**** START section four logic ****/
 .four {
   color: #fff;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center;
   text-align: center; }
@@ -408,14 +385,11 @@ footer {
 
 .films {
   background-color: black;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column wrap;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
   height: 100vh;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center;
   left: 0;
@@ -424,9 +398,8 @@ footer {
   position: fixed;
   text-align: center;
   top: 0;
-  -webkit-transform: translateX(5%);
-      -ms-transform: translateX(5%);
-          transform: translateX(5%);
+  -ms-transform: translateX(5%);
+      transform: translateX(5%);
   transition: opacity .6s ease-out .3s, z-index .6s ease-out .3s;
   width: 100vw;
   z-index: -10; }
@@ -438,9 +411,8 @@ footer {
   .films h2:hover:after {
     opacity: 1; }
   .films h4 {
-    -webkit-transform: translateX(-5%);
-        -ms-transform: translateX(-5%);
-            transform: translateX(-5%); }
+    -ms-transform: translateX(-5%);
+        transform: translateX(-5%); }
     .films h4 span {
       cursor: pointer; }
     .films h4:before {
@@ -464,13 +436,10 @@ footer {
   background: url(../img/TRANSMENTAL%20AND%20KING%20SUPERTRAMP%20WALLPAPER.jpg) no-repeat center center fixed;
   background-size: cover;
   color: #fff;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center; }
   .dope .coming-soon {

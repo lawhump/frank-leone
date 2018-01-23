@@ -39,6 +39,10 @@
       @include animation('fade-out-main .8 ease-out');
       animation-fill-mode: forwards;
     }
+
+    img {
+      width: 30rem;
+    }
 }
 
 @media only screen
@@ -180,7 +184,8 @@ and (max-device-width: 480px) {
     width: 100%;
 }
 
-.props {
+.awaken {
+  cursor: pointer;
     float: left;
     margin-left: 5vw;
 }

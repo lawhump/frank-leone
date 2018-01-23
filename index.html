@@ -11,7 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/ >
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favs/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favs/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favs/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favs/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favs/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favs/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favs/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favs/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favs/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favs/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favs/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favs/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favs/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favs/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="favs/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="favs/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="favs/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="favs/mstile-310x310.png" />
+
     <!-- <link rel="stylesheet" href="dist/css/all.min.css"> -->
     <link rel="stylesheet" href="dist/css/all.min.css">
     <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
@@ -52,7 +72,7 @@
           <li><a href="clothes.html"><h4>CLOTHES</h4></a></li>
         </ul>
         <div class="enterwild">
-          <img src="dist/img/EW.jpeg">
+          <img src="dist/img/LP-2-COMING-SOON.jpg">
         </div>
       </section>
 
@@ -60,19 +80,55 @@
         <div class="social-media">
           <a href="https://twitter.com/thefrankleone"><h2>BIRD</h2></a></br>
           <a href="https://instagram.com/frankleone_/"><h2>GRaM</h2></a></br>
-          <a href="http://www.thefrankleone.tumblr.com"><h2>BLOG</h2></a></br>
           <a href="mailto:leonemusical@gmail.com"><h2>MaIL</h2></a>
         </div>
         <div class="decorative-stuff">
           <div class="wrapper">
-          <h4 class="props"><a href="#credits">! ! !</a></h4>
-          <h4 class="howl" onclick="play()">Howl</h4>
+          <h4 class="awaken" onclick="play('awaken')">Awaken</h4>
+          <h4 class="howl" onclick="play('howl')">Howl</h4>
           <audio id="howl-audio" src="Velociraptor%20Full.wav"></audio>
+          <audio id="awaken-audio" src="aWaKEN.wav"></audio>
           </div>
         </div>
       </section>
 
       <section class="three">
+        <h3 class="album-name-mob">SINGLES</h3>
+        <h1 data-bottom="transform: translateY(62%);" data-top-bottom="transform: translateY(92%);" class="album-name">
+
+          <svg width="100%" height="18.5rem">
+            <rect x="0" y="0" width="100%" height="18.5rem"></rect>
+            <text x="50%" y="9.25rem"
+            text-anchor="middle"
+            alignment-baseline="central"
+            fill="url(#title-gradient)"
+            mask="url(#title-mask)">SINGLES</text>
+          </svg>
+        </h1>
+        <div class="grid js-masonry">
+          <div class="grid-sizer"></div>
+          <div class="grid-item is-loading sc">
+            <a href="https://soundcloud.com/leonemusic/loser">
+              <img class="song" src="dist/img/masonry/singles/loser.jpg">
+            </a>
+          </div>
+          <div class="grid-item is-loading sc">
+            <a href="https://soundcloud.com/leonemusic/cocaine-for-kids-feat-monster-mike">
+              <img class="song" src="dist/img/masonry/singles/cocaine.jpg">
+            </a>
+          </div>
+          <div class="grid-item is-loading sc">
+            <a href="https://soundcloud.com/leonemusic/supertramp-usa">
+              <img class="song" src="dist/img/masonry/singles/supertramp.jpg">
+            </a>
+          </div>
+          <div class="grid-item is-loading sc">
+            <a href="https://soundcloud.com/leonemusic/hometown-heroes-feat-femdot-1">
+              <img class="song" src="dist/img/masonry/singles/hh.jpg">
+            </a>
+          </div>
+        </div>
+
         <h3 class="album-name-mob">DEATH GRIPS</h3>
         <h1 data-bottom="transform: translateY(62%);" data-top-bottom="transform: translateY(92%);" class="album-name">
 
@@ -310,7 +366,7 @@
         <footer>
           <small>THIS SITE WaS DESIGNED BY FRaNK & CONSTRUCTED BY LaWRENCE HUMPHREY</small>
 
-          <small>SEND HIM INQUIRIES | DEaTH THREaTS</small>
+          <small>SEND HIM INQUIRIES</small>
 
           <small><em><a href="http://www.lawrencehumphrey.com">LAWRENCEHUMPHREY.COM</a></em></small>
         </footer>
@@ -343,8 +399,8 @@
     </script>
 
     <script>
-      function play(){
-        var audio = document.getElementById('howl-audio');
+      function play(src){
+        var audio = document.getElementById(src + '-audio');
         if (audio.paused) {
           audio.play();
         }
