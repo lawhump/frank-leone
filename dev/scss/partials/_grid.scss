@@ -1,4 +1,12 @@
-.grid { margin: 5rem auto; }
+.grid {
+  margin: 5rem auto;
+
+  // Hacky af but you know idgaf anymore this project is a mess
+  #hp {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
 
 .grid-item {
     background-color: black;
@@ -6,6 +14,11 @@
     background-repeat: no-repeat;
     height: 300px;
     margin-bottom: 10px;
+
+    img {
+      height: 300px;
+      width: 300px;
+    }
 }
 
 .grid-item.is-loading {
@@ -26,7 +39,11 @@
 }
 
 .grid-item--height3 {
-    height: 600px;
+    height: 60rem;
+
+    img {
+      height: 600px;
+    }
 }
 
 .grid-item,
@@ -36,4 +53,60 @@
 
 .grid-item--width2 {
     width: 38%;
+}
+
+.grid-item--width3 {
+    width: 100% !important;
+
+    img {
+      width: 60rem;
+    }
+}
+
+.single {
+  margin-top: 5rem;
+  width: 100%;
+
+  img {
+    height: 600px;
+    width: 600px;
+    z-index: 1000;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+    .grid-item,
+    .grid-sizer {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .grid-item,
+    .grid-sizer {
+        width: 48%;
+    }
+
+    .grid-item--height3 {
+      height: 30rem;
+
+      img {
+        height: 30rem;
+      }
+    }
+
+    .grid-item--width3 {
+      width: 96% !important;
+
+      img {
+          width: 30rem;
+      }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-item,
+    .grid-sizer {
+        width: 96%;
+    }
 }

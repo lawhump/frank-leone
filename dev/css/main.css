@@ -282,10 +282,8 @@ footer {
   height: auto;
   text-align: center; }
   .three img {
-    height: 300px;
     opacity: .9;
-    transition: opacity 0.3s ease-in-out;
-    width: 300px; }
+    transition: opacity 0.3s ease-in-out; }
     .three img:hover {
       opacity: 1; }
   .three .tall {
@@ -299,18 +297,6 @@ footer {
     top: 0;
     left: 0;
     z-index: 2; }
-  @media only screen and (max-width: 1365px) {
-    .three .grid-item,
-    .three .grid-sizer {
-      width: 32%; } }
-  @media only screen and (max-width: 950px) {
-    .three .grid-item,
-    .three .grid-sizer {
-      width: 48%; } }
-  @media only screen and (max-width: 700px) {
-    .three .grid-item,
-    .three .grid-sizer {
-      width: 96%; } }
 
 .album-name {
   letter-spacing: 1.3rem; }
@@ -355,6 +341,10 @@ footer {
 /**** END section four logic ****/
 .grid {
   margin: 5rem auto; }
+  .grid #hp {
+    left: 50% !important;
+    -ms-transform: translateX(-50%) !important;
+        transform: translateX(-50%) !important; }
 
 .grid-item {
   background-color: black;
@@ -362,6 +352,9 @@ footer {
   background-repeat: no-repeat;
   height: 300px;
   margin-bottom: 10px; }
+  .grid-item img {
+    height: 300px;
+    width: 300px; }
 
 .grid-item.is-loading {
   background-color: black;
@@ -374,7 +367,9 @@ footer {
   height: 450px; }
 
 .grid-item--height3 {
-  height: 600px; }
+  height: 60rem; }
+  .grid-item--height3 img {
+    height: 600px; }
 
 .grid-item,
 .grid-sizer {
@@ -382,6 +377,42 @@ footer {
 
 .grid-item--width2 {
   width: 38%; }
+
+.grid-item--width3 {
+  width: 100% !important; }
+  .grid-item--width3 img {
+    width: 60rem; }
+
+.single {
+  margin-top: 5rem;
+  width: 100%; }
+  .single img {
+    height: 600px;
+    width: 600px;
+    z-index: 1000; }
+
+@media only screen and (max-width: 1365px) {
+  .grid-item,
+  .grid-sizer {
+    width: 32%; } }
+
+@media only screen and (max-width: 950px) {
+  .grid-item,
+  .grid-sizer {
+    width: 48%; }
+  .grid-item--height3 {
+    height: 30rem; }
+    .grid-item--height3 img {
+      height: 30rem; }
+  .grid-item--width3 {
+    width: 96% !important; }
+    .grid-item--width3 img {
+      width: 30rem; } }
+
+@media only screen and (max-width: 700px) {
+  .grid-item,
+  .grid-sizer {
+    width: 96%; } }
 
 .films {
   background-color: black;

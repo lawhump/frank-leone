@@ -208,10 +208,8 @@ and (max-device-width: 480px) {
     text-align: center;
 
     img {
-        height: 300px;
         opacity: .9;
         transition: opacity 0.3s ease-in-out;
-        width: 300px;
 
         &:hover {
             opacity: 1;
@@ -225,27 +223,6 @@ and (max-device-width: 480px) {
     .sc { position: relative; }
 
     iframe { postion: absolute; top: 0; left: 0; z-index: 2; }
-
-    @media only screen and (max-width: 1365px) {
-        .grid-item,
-        .grid-sizer {
-            width: 32%;
-        }
-    }
-
-    @media only screen and (max-width: 950px) {
-        .grid-item,
-        .grid-sizer {
-            width: 48%;
-        }
-    }
-
-    @media only screen and (max-width: 700px) {
-        .grid-item,
-        .grid-sizer {
-            width: 96%;
-        }
-    }
 }
 
 .album-name {
