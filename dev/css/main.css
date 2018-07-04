@@ -367,7 +367,7 @@ footer {
   height: 450px; }
 
 .grid-item--height3 {
-  height: 60rem; }
+  height: 67rem; }
   .grid-item--height3 img {
     height: 600px; }
 
@@ -406,9 +406,9 @@ footer {
   .grid-item,
   .grid-sizer {
     width: 48%; }
-  .grid-item--height3 {
+  #hp.grid-item--height3 {
     height: 30rem; }
-    .grid-item--height3 img {
+    #hp.grid-item--height3 img {
       height: 30rem; }
   .grid-item--width3 {
     width: 96% !important; }
