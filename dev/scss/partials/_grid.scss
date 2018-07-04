@@ -46,6 +46,11 @@
     }
 }
 
+.empty {
+  background: #000;
+  border: none;
+}
+
 .grid-item,
 .grid-sizer {
     width: 24%;
@@ -78,6 +83,10 @@
     .grid-item,
     .grid-sizer {
         width: 32%;
+    }
+
+    .empty {
+      display: none;
     }
 }
 

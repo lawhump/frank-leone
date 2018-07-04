@@ -371,6 +371,10 @@ footer {
   .grid-item--height3 img {
     height: 600px; }
 
+.empty {
+  background: #000;
+  border: none; }
+
 .grid-item,
 .grid-sizer {
   width: 24%; }
@@ -394,7 +398,9 @@ footer {
 @media only screen and (max-width: 1365px) {
   .grid-item,
   .grid-sizer {
-    width: 32%; } }
+    width: 32%; }
+  .empty {
+    display: none; } }
 
 @media only screen and (max-width: 950px) {
   .grid-item,
