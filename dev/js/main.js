@@ -1,5 +1,7 @@
+var tunesPage = document.querySelector('.tunes');
 var filmPage = document.querySelector('.films');
-var back = document.querySelector('.back');
+var tunesBack = document.querySelector('.tunes .back');
+var filmsBack = document.querySelector('.films .back');
 
 var resize = function() {
   var width = window.innerWidth;
@@ -41,6 +43,14 @@ document.querySelector('.filmLink').addEventListener('click', function() {
   filmPage.classList.add('active');
 });
 
-back.addEventListener('click', function() {
+document.querySelector('.tunesLink').addEventListener('click', function() {
+  tunesPage.classList.add('active');
+});
+
+filmsBack.addEventListener('click', function() {
   filmPage.classList.remove('active');
+});
+
+tunesBack.addEventListener('click', function() {
+  tunesPage.classList.remove('active');
 });

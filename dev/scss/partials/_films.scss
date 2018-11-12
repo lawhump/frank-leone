@@ -1,4 +1,4 @@
-.films {
+.fullPage {
   background-color: black;
   display: flex;
   -webkit-flex-flow: column wrap;
@@ -12,7 +12,7 @@
   position: fixed;
   text-align: center;
   top: 0;
-  transform: translateX(5%);
+  // transform: translateX(5%);
   transition: opacity .6s ease-out .3s,
               z-index .6s ease-out .3s;
   width: 100vw;
@@ -34,6 +34,7 @@
   }
 
   h4 {
+    text-transform: none;
     transform: translateX(-5%);
 
     span {
@@ -61,7 +62,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .films h2 {
+  .fullPage h2 {
     font-size: 10vmin;
   }
 }
